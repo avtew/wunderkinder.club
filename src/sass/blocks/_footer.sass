@@ -1,0 +1,29 @@
+.footer
+  padding: 40px 0
+  background-color: #F7F8F9
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    gap: 20px
+    width: 100%
+    color: #000000
+    div
+      width: 33.3%
+    nav
+      width: 33.3%
+  &__copy
+    position: relative
+    margin-left: 40px
+    &:before
+      position: absolute
+      left: -40px
+      content: ''
+      display: inline-block
+      width: 24px
+      height: 24px
+      background-color: $main-color
+  &__studio
+    display: flex
+    justify-content: flex-end
+    margin: auto

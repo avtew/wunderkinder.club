@@ -1,0 +1,29 @@
+.menu
+  display: flex
+  gap: 100px
+  margin: 0
+  padding: 0
+  text-transform: uppercase
+  list-style-type: none
+  &__item
+    &:after
+      content: ''
+      display: block
+      width: 0%
+      height: 2px
+      background-color: $accent-color
+      transition: 0.2s all
+    &:hover
+      &:after
+        width: 100%
+  &__lang
+    margin-left: auto
+  &__link
+    color: #ffffff
+    text-decoration: none
+    &_footer
+      color: #000000
+  &_center
+    justify-content: center
+    
+    

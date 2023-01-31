@@ -1,0 +1,48 @@
+.contacts
+  background-color: #ffffff
+  &__message
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+    width: 100%
+    height: 100%
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    flex-grow: 2
+    gap: 20px
+    width: 100%
+    input
+      padding: 20px
+      width: 100%
+      height: 40px
+      background-color: #F7F8F9
+      border: none
+      // border-radius: 3px
+      outline: none
+    textarea
+      flex-grow: 2
+      padding: 20px
+      width: 100%
+      background-color: #F7F8F9
+      resize: none
+      border: none
+      // border-radius: 3px
+      outline: none
+  &__social
+    display: flex
+    gap: 40px
+  &__icon
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 60px
+    height: 60px
+    &:hover span
+      color: $accent-color
+    span
+      color: $main-color
+      font-size: 2.5rem
+      transition: 0.2s all
