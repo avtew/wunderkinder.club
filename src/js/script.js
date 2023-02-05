@@ -56,7 +56,6 @@ const menuItem = document.querySelectorAll('.menu__item');
 const menuDrop = document.querySelector('.menu__drop');
 const string = document.querySelectorAll('[data-i18n]');
 const ru = document.querySelector('.menu__lang_ru');
-const ua = document.querySelector('.menu__lang_ua');
 const en = document.querySelector('.menu__lang_en');
 const btnPerson = document.querySelectorAll('.button_person');
 const popup = document.querySelector('.popup');
@@ -64,6 +63,7 @@ const popupClose = document.querySelector('.popup__close');
 // const dropList = document.querySelector('.menu__droplist');
 // const menuLang = document.querySelectorAll('.menu__lang');
 // const menuLangActive = document.querySelectorAll('.menu__lang_active');
+// const ua = document.querySelector('.menu__lang_ua');
 
 //Listeners
 
@@ -73,7 +73,7 @@ menuDrop.addEventListener('mouseover', () => {
   menuDrop.classList.add('hover');
 });
 ru.addEventListener('click', () => { switchLang("ru"); });
-ua.addEventListener('click', () => { switchLang("ua"); });
+// ua.addEventListener('click', () => { switchLang("ua"); });
 en.addEventListener('click', () => { switchLang("en"); });
 btnPerson.forEach((el) => el.addEventListener('click', togglePopup));
 btnPerson.forEach((el) => el.addEventListener('mouseover', (event) => {

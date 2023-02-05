@@ -22,15 +22,15 @@
             <img src="icons/logo.svg" alt="logo">
           </div>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#about" data-i18n="menu-about">о клубе</a></li>
-            <li class="menu__item"><a class="menu__link" href="coaches" data-i18n="menu-coaches">тренеры</a></li>
-            <li class="menu__item"><a class="menu__link" href="#contacts" data-i18n="menu-contacts">контакты</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about" data-i18n="about">о клубе</a></li>
+            <li class="menu__item"><a class="menu__link" href="coaches" data-i18n="coaches">тренеры</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contacts" data-i18n="contacts">контакты</a></li>
           </ul>
           <div class="menu__drop hover">
             <span class="menu_lang menu__lang_active">ru</span>
             <div class="menu__droplist">
               <span class="menu__lang menu__lang_ru">ru</span>
-              <span class="menu__lang menu__lang_ua">ua</span>
+              <!-- <span class="menu__lang menu__lang_ua">ua</span> -->
               <span class="menu__lang menu__lang_en">en</span>
             </div>
           </div>
@@ -61,11 +61,11 @@
             <img src="img/img_1.jpg" alt="Boy with chessboard in front of laptop">
           </div>
           <div class="col-lg-6 col-sm-12 square square_text">
-            <h2>О клубе</h2>
+            <h2 data-i18n="about">О клубе</h2>
             <div>
               <p>Детский шахматный клуб "Вундеркинды" основан в 2018 году. С тех пор его постоянными участниками стали дети и их родители из многих стран.</p>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt veritatis veniam, praesentium voluptate animi ipsam iste placeat totam quam repudiandae nihil quod natus libero ratione delectus voluptates tenetur.</p>
               <p>Своей целью мы считаем не только научить детей играть в шахматы, помогать им развивать логическое мышление, внимание и усидчивость, но и создать благоприятную, дружескую атмосферу во время образовательного процесса и за его пределами.</p>
+              <p>Мы принимаем детей от 5 до 14 лет и различной подготовки - как самого начального уровня, так и тех, кто уже знаком с основами игры и желает дальше познавать премудрости шахматного искусства.</p>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@
     <section class="process">
       <div class="container">
         <div class="process__wrapper">
-          <h3>Мы предлагаем:</h3>
+          <h3 data-i18n="offer">Мы предлагаем:</h3>
           <div class="row gy-5">
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
@@ -107,7 +107,7 @@
             </div>
           </div>
           <form action="">
-            <button class="button">присоединиться</button>
+            <button class="button" data-i18n="joinus">присоединиться</button>
           </form>
         </div>
       </div>
@@ -117,7 +117,7 @@
       <div class="container container_nm">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 order-lg-first square square_text">
-            <h2>Тренеры</h2>
+            <h2 data-i18n="coaches">Тренеры</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta exercitationem saepe obcaecati in accusantium delectus iste quae? Culpa alias itaque unde similique aut inventore atque impedit adipisci. Impedit, tenetur illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique vitae quis quas harum. Voluptates, iure voluptate temporibus corrupti in quod molestiae vitae, excepturi, eaque quos maiores eos qui ex.</p>
           </div>
           <div class="col-lg-6 col-sm-12 order-sm-first square square_photo">
@@ -131,14 +131,14 @@
       <div class="container container_nm">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 square square_info">
-            <h3>Людмила Горошкова</h3>
+            <h3 data-i18n="liudmyla">Людмила Горошкова</h3>
             <img class="persons__photo" src="img/liudmyla.jpg" alt="Liudmyla Goroshkova">
-            <button class="button button_person" id="0">подробнее</button>
+            <button class="button button_person" id="0" data-i18n="more">подробнее</button>
           </div>
           <div class="col-lg-6 col-sm-12 square square_info">
-            <h3>Максим Горошков</h3>
+            <h3 data-i18n="maksym">Максим Горошков</h3>
             <img class="persons__photo" src="img/maksym.jpg" alt="Maksym Goroshkov">
-            <button class="button button_person" id="1">подробнее</button>
+            <button class="button button_person" id="1" data-i18n="more">подробнее</button>
           </div>
         </div>
       </div>
@@ -164,10 +164,10 @@
       <div class="container container_nm">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 square square_info">
-            <h2>Контакты</h2>
+            <h2 data-i18n="contacts">Контакты</h2>
             <div class="logo logo_contacts">
               <img src="icons/logo.svg" alt="logo">
-              <span>детский<br>шахматный<br>клуб</span>
+              <span data-i18n="logo-name">детский шахматный клуб</span>
             </div>
             <div class="contacts__social">
               <a href=""><div class="contacts__icon">
@@ -180,12 +180,12 @@
           </div>
           <div class="col-lg-6 col-sm-12 square square_form">
             <div class="contacts__message">
-              <h3>Напишите нам</h3>
+              <h3 data-i18n="write">Напишите нам</h3>
               <form class="contacts__form">
-                <input name="name" type="text" placeholder="Ваше имя">
-                <input name="email" required type="email" placeholder="Ваш email">
-                <textarea name="text" required placeholder="Ваше сообщение..."></textarea>
-                <button class="button button_submit">отправить</button>
+                <input name="name" type="text" placeholder="Name">
+                <input name="email" required type="email" placeholder="Email">
+                <textarea name="text" required placeholder="Your message..."></textarea>
+                <button class="button button_submit" data-i18n="send">отправить</button>
               </form>
             </div>
           </div>
@@ -199,8 +199,8 @@
           <div class="footer__copy">Вундеркинды, 2023</div>
           <nav>
             <ul class="menu menu_center">
-              <li class="menu__item"><a class="menu__link menu__link_footer" href="#about">о клубе</a></li>
-              <li class="menu__item"><a class="menu__link menu__link_footer" href="#trainers">тренеры</a></li>
+              <li class="menu__item"><a class="menu__link menu__link_footer" href="#about" data-i18n="about">о клубе</a></li>
+              <li class="menu__item"><a class="menu__link menu__link_footer" href="#trainers" data-i18n="coaches">тренеры</a></li>
             </ul>
           </nav>
           <div class="footer__studio">Дизайн: ...</div>
