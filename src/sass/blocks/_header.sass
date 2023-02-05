@@ -6,21 +6,26 @@
   &:after
     content: ''
     position: absolute
-    z-index: 1
     top: 0
     left: 0
     right: 0
     bottom: 0
     background: rgba(0,0,0,0.4)
-    backdrop-filter: blur(7px)
+    backdrop-filter: blur(5px)
   &__text
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
+    align-self: center
     flex-grow: 2
     gap: 40px
-    p
+    width: 65%
+    h2
+      font: 2.5rem Nunito-Bold, sans-serif
+      text-align: center
+      text-transform: none
+    span
       width: 75%
       margin: 0
       font-size: 1.625rem

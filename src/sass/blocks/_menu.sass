@@ -16,8 +16,33 @@
     &:hover
       &:after
         width: 100%
-  &__lang
+  &__drop
+    position: relative
+    display: inline-block
     margin-left: auto
+    text-transform: uppercase
+    cursor: pointer
+    &.hover
+      &:hover .menu__droplist
+        display: flex
+    &:after
+      content: ''
+      display: block
+      width: 0%
+      height: 2px
+      background-color: $accent-color
+      transition: 0.2s all
+    &:hover
+      &:after
+        width: 100%
+  &__droplist
+    position: absolute
+    display: none
+    flex-direction: column
+  &__lang
+    padding-top: 5px
+    &:hover
+      color: $accent-color
   &__link
     color: #ffffff
     text-decoration: none

@@ -2,15 +2,16 @@ body
   position: relative
   color: #ffffff
   font-family: Nunito-Regular, sans-serif
-  background-color: #F7F8F9
+  background-color: #F6F6F6
 
 a
   text-decoration: none
 
 h1
+  width: 150px
   margin: 0
-  font: 3rem Shnobel, serif
-  text-align: center
+  font: 2.875rem Shnobel, sans-serif
+  text-align: left
   text-transform: uppercase
 
 h2
@@ -22,6 +23,18 @@ h3
   margin: 0
   font: 2rem Shnobel, serif
   text-transform: uppercase
+
+.nav
+  position: relative
+  z-index: 2
+  display: flex
+  transition: 0.5s
+  &.open
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    right: 0px
+    // box-shadow: 0 0 0 9999px rgba(0,0,0, 0.75)
 
 .about
   background-color: #ffffff

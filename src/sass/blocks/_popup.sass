@@ -1,32 +1,39 @@
-.modal
+.popup
   position: fixed
   top: 50%
   left: 50%
   z-index: 3
   display: none
-  justify-content: space-between
   margin: auto
   color: #000000
-  background-color: #ffffff
+  background-color: #F6F6F6
   transform: translate(-50%, -50%)
   &__photo
     width: 450px
     height: 450px
-    background: url("../img/liudmyla.jpg") center / contain no-repeat
+    background-image: ""
+    background-size: cover
+    background-repeat: no-repeat
   &__info
     display: flex
     flex-direction: column
-    gap: 20px
+    justify-content: space-between
     width: 450px
     padding: 40px
     h3
       align-self: center
-  &__dscrptn
+    p
+      margin: 0
+  &__list
     display: flex
     flex-direction: column
     justify-content: center
-    gap: 5px
-    flex-grow: 2
+    gap: 10px
+    margin: 0
+  &__item
+    color: $accent-color
+    span
+      color: #000000
   &__close
     position: absolute
     top: -50px
@@ -49,3 +56,5 @@
       transform: rotate(45deg)
     &:after
       transform: rotate(-45deg)
+  &.open
+    display: flex

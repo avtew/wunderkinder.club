@@ -12,7 +12,7 @@
         width: 100px
         height: 100px
       span
-        font-size: 2rem
+        font-size: 1.75rem
 
 @media (max-width: 991px)
   .square
@@ -34,11 +34,19 @@
 
   .menu
     gap: 50px
+
+  .popup
+    flex-direction: column
+    &__photo
+      display: none
+    &__info
+      width: 450px
+      height: 450px
+    &__close
+      top: -50px
+      left: 450px
     
 @media (max-width: 767px)
-  h1
-    font-size: 2rem
-
   h2
     font-size: 2rem
 
@@ -59,7 +67,7 @@
         width: 100px
         height: 100px
       span
-        font-size: 2rem
+        font-size: 1.75rem
 
   .process
     padding: 40px
@@ -87,6 +95,10 @@
       align-items: center
 
 @media (max-width: 575px)
+  h1
+    font-size: 2rem
+    line-height: 32px
+
   .burger
     display: flex
 
@@ -95,14 +107,17 @@
     nav
       position: fixed
       top: 0
-      left: 575px
-      width: 100%
+      right: -575px
+      width: 320px
       height: 100%
       padding: 100px
-      background-color: $main-color
-
+      background-color: $accent-color
+        
   .logo
     margin: 20px 0
+    &_nav
+      display: block
+      margin: 0 auto 50px auto
     img
       width: 100px
       height: 100px
@@ -132,7 +147,8 @@
     .menu
       flex-direction: column
       align-items: flex-start
-      font-size: 1.5rem
+      gap: 40px
+      font-size: 1rem
       &__lang
         margin: 0
     &__text
@@ -145,10 +161,18 @@
     &__form
       gap: 10px
 
-@media (max-width: 376px)
-  h1
-    font-size: 1.5rem
+  .popup
+    &__info
+      width: 250px
+      height: 250px
+      padding: 20px
+      p
+        display: none
+    &__close
+      top: -50px
+      left: 250px
 
+@media (max-width: 376px)
   h2
     font-size: 1.5 rem
 

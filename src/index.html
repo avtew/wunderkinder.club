@@ -17,13 +17,23 @@
 
     <header class="header">
       <div class="container container_header">
-        <nav>
+        <nav class="nav">
+          <div class="logo logo_nav">
+            <img src="icons/logo.svg" alt="logo">
+          </div>
           <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#about">о клубе</a></li>
-            <li class="menu__item"><a class="menu__link" href="#trainers">тренеры</a></li>
-            <li class="menu__item"><a class="menu__link" href="#contacts">контакты</a></li>
-            <li class="menu__item menu__lang"><a class="menu__link" href="#">ru</a></li>
+            <li class="menu__item"><a class="menu__link" href="#about" data-i18n="menu-about">о клубе</a></li>
+            <li class="menu__item"><a class="menu__link" href="coaches" data-i18n="menu-coaches">тренеры</a></li>
+            <li class="menu__item"><a class="menu__link" href="#contacts" data-i18n="menu-contacts">контакты</a></li>
           </ul>
+          <div class="menu__drop hover">
+            <span class="menu_lang menu__lang_active">ru</span>
+            <div class="menu__droplist">
+              <span class="menu__lang menu__lang_ru">ru</span>
+              <span class="menu__lang menu__lang_ua">ua</span>
+              <span class="menu__lang menu__lang_en">en</span>
+            </div>
+          </div>
         </nav>
         <div class="burger">
           <div class="burger__line burger__line-1"></div>
@@ -32,13 +42,13 @@
         </div>
         <div class="logo">
           <img src="icons/logo.svg" alt="logo">
-          <span>детский<br>шахматный<br>клуб</span>
+          <h1 data-i18n="logo-name">детский шахматный клуб</h1>
         </div>
         <div class="header__text">
-          <h1>Детский шахматный клуб<br>"Вундеркинды"</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nisi sit voluptatum qui possimus! Libero ullam perspiciatis nobis culpa tenetur maiores? Dicta ratione nisi iusto minima. Rerum molestiae debitis officia</p>
-          <form action="mailto:avtew@yandex.ru">
-            <button class="button">вступить в клуб</button>
+          <h2 data-i18n="header-title">Откройте для себя и своего ребёнка увлекательный мир шахмат</h2>
+          <span data-i18n="header-subtitle">Шахматы - это интересно, полезно и престижно</span>
+          <form action="">
+            <button class="button" data-i18n="join">вступить в клуб</button>
           </form>
         </div>
       </div>
@@ -50,9 +60,13 @@
           <div class="col-lg-6 col-sm-12 square square_photo">
             <img src="img/img_1.jpg" alt="Boy with chessboard in front of laptop">
           </div>
-          <div class="col-lg-6 col-sm-12 square square_black">
+          <div class="col-lg-6 col-sm-12 square square_text">
             <h2>О клубе</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis aliquam beatae repellendus voluptatum temporibus ullam dolorum neque a magni ratione cum, rerum ducimus vel iure provident labore eos vero illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores iure modi nihil tenetur officiis hic, earum quidem. Molestiae atque maxime corporis temporibus tenetur facere! Atque vero in incidunt maxime quas?</p>
+            <div>
+              <p>Детский шахматный клуб "Вундеркинды" основан в 2018 году. С тех пор его постоянными участниками стали дети и их родители из многих стран.</p>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt veritatis veniam, praesentium voluptate animi ipsam iste placeat totam quam repudiandae nihil quod natus libero ratione delectus voluptates tenetur.</p>
+              <p>Своей целью мы считаем не только научить детей играть в шахматы, помогать им развивать логическое мышление, внимание и усидчивость, но и создать благоприятную, дружескую атмосферу во время образовательного процесса и за его пределами.</p>
+            </div>
           </div>
         </div>
       </div>
@@ -72,16 +86,16 @@
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
-                <img src="icons/person.svg" alt="Icon">
-                <div class="process__title">Индивидуальные<br>занятия</div>
-                <div class="process__sub">Гибкий график<br>и персональный подход</div>
+                <img src="icons/group.svg" alt="Icon">
+                <div class="process__title">Групповые<br>занятия</div>
+                <div class="process__sub">Группы для начинающих<br>и для разрядников</div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
-                <img src="icons/group.svg" alt="Icon">
-                <div class="process__title">Групповые<br>занятия</div>
-                <div class="process__sub">Группы для начинающих<br>и для разрядников</div>
+                <img src="icons/person.svg" alt="Icon">
+                <div class="process__title">Индивидуальные<br>занятия</div>
+                <div class="process__sub">Гибкий график<br>и персональный подход</div>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
@@ -92,17 +106,17 @@
               </div>
             </div>
           </div>
-          <form action="mailto:avtew@yandex.ru">
+          <form action="">
             <button class="button">присоединиться</button>
           </form>
         </div>
       </div>
     </section>
 
-    <section class="trainers" id="trainers">
+    <section class="trainers" id="coaches">
       <div class="container container_nm">
         <div class="row g-0">
-          <div class="col-lg-6 col-sm-12 order-lg-first square square_black">
+          <div class="col-lg-6 col-sm-12 order-lg-first square square_text">
             <h2>Тренеры</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta exercitationem saepe obcaecati in accusantium delectus iste quae? Culpa alias itaque unde similique aut inventore atque impedit adipisci. Impedit, tenetur illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique vitae quis quas harum. Voluptates, iure voluptate temporibus corrupti in quod molestiae vitae, excepturi, eaque quos maiores eos qui ex.</p>
           </div>
@@ -119,26 +133,28 @@
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3>Людмила Горошкова</h3>
             <img class="persons__photo" src="img/liudmyla.jpg" alt="Liudmyla Goroshkova">
-            <button class="button button_person">подробнее</button>
+            <button class="button button_person" id="0">подробнее</button>
           </div>
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3>Максим Горошков</h3>
-            <img class="persons__photo" src="" alt="Maksym Goroshkov">
-            <button class="button button_person">подробнее</button>
+            <img class="persons__photo" src="img/maksym.jpg" alt="Maksym Goroshkov">
+            <button class="button button_person" id="1">подробнее</button>
           </div>
         </div>
       </div>
-      <div class="modal modal_persons">
-        <div class="modal__close"></div>
-        <div class="modal__photo"></div>
-        <div class="modal__info">
-          <h3 class="modal__name">Людмила Горошкова</h3>
-          <div class="modal__dscrptn">
-            <p class="modal__about">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit cum, qui fugiat a nulla aliquid perspiciatis. Non ullam consectetur, eius asperiores velit est adipisci ipsam excepturi laborum consequuntur perferendis deserunt.</p>
-            <span>Возраст:</span><span class="modal__age"></span>
-            <span>Ранк:</span><span class="modal__rank"></span>
-            <span>Рейтинг FIDE:</span><span class="modal__fide"></span>
-            <span>Профиль FIDE:</span><span class="modal__fide"></span>
+      <div class="popup">
+        <div class="popup__close"></div>
+        <div class="popup__photo"></div>
+        <div class="popup__info">
+          <h3 class="popup__name"></h3>
+          <p class="popup__about"></p>
+          <div>
+            <ul class="popup__list">
+              <li class="popup__item"><span>Возраст: </span><span class="popup__age"></span></li>
+              <li class="popup__item"><span>Звание: </span><span class="popup__rank"></span></li>
+              <li class="popup__item"><span>Рейтинг: </span><span class="popup__rate"></span></li>
+              <li class="popup__item"><span>Профиль: </span><span class="popup__link"></span></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -162,7 +178,7 @@
               </div></a>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 square square_contacts">
+          <div class="col-lg-6 col-sm-12 square square_form">
             <div class="contacts__message">
               <h3>Напишите нам</h3>
               <form class="contacts__form">
@@ -192,7 +208,7 @@
       </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/script.js" type="module"></script>
 
   </body>
 
