@@ -1,4 +1,12 @@
-@media (max-width: 1199px)
+// @media (max-width: 1400px)
+  
+@media (max-width: 1200px)
+  .header
+    &__text
+      h2
+        font-size: 2rem
+      span
+        font-size: 1.5rem
   .square
     font-size: 1rem
     &_info
@@ -6,15 +14,23 @@
         width: 200px
         height: 200px
 
-  .logo
-    &_contacts
-      img
-        width: 100px
-        height: 100px
-      span
-        font-size: 1.75rem
+.logo
+  &_contacts
+    img
+      width: 100px
+      height: 100px
+    span
+      font-size: 1.75rem
 
-@media (max-width: 991px)
+@media (max-width: 992px)
+  .header
+    &__text
+      gap: 20px
+      h2
+        width: 65%
+        font-size: 1.5rem
+      span
+        font-size: 1.25rem
   .square
     font-size: 1.5rem
     &_info
@@ -47,6 +63,15 @@
       left: 450px
     
 @media (max-width: 767px)
+  .header
+    &__text
+      gap: 20px
+      h2
+        width: 100%
+        font-size: 1.5rem
+      span
+        font-size: 1rem
+
   h2
     font-size: 2rem
 
@@ -172,7 +197,15 @@
       top: -50px
       left: 250px
 
-@media (max-width: 376px)
+@media (max-width: 453px)
+  .header
+    &__text
+      gap: 20px
+      h2
+        width: 100%
+        font-size: 1.25rem
+      span
+        font-size: 1rem
   h2
     font-size: 1.5 rem
 
