@@ -1,5 +1,6 @@
 .footer
   padding: 40px 0
+  font-family: Montserrat-Regular, sans-serif
   &__info
     display: flex
     justify-content: space-between
@@ -7,21 +8,15 @@
     gap: 20px
     width: 100%
     color: #000000
+    span
+      color: $main-color
+      font-size: 2rem
     div
       width: 33.3%
     nav
       width: 33.3%
   &__copy
     position: relative
-    margin-left: 40px
-    &:before
-      position: absolute
-      left: -40px
-      content: ''
-      display: inline-block
-      width: 24px
-      height: 24px
-      background-color: $main-color
   &__studio
     display: flex
     justify-content: flex-end

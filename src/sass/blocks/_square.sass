@@ -7,35 +7,33 @@
   padding: 80px
   color: #000000
   font-size: 20px
-  &_photo
+  &_image
+    justify-content: center
     padding: 0
-    filter: opacity(75%)
-    overflow: hidden
-    &:hover
-      filter: none
     img
-      width: 100%
-      height: 100%
+      width: 80%
+      height: 80%
       transition: 0.5s
-      &:hover
-        transform: scale(1.1)
+      // &:hover
+      //   transform: scale(1.1)
   &_text
-    justify-content: flex-start
     gap: 40px
     color: #ffffff
+    font: 1.25rem Montserrat-Regular, sans-serif
     background-color: $main-color
     div
       display: flex
       flex-direction: column
       justify-content: center
       flex-grow: 2
+    p:nth-child(3)
+        margin: 0
   &_info
-    justify-content: space-between
-    padding: 80px
-    .persons__photo
+    img
       width: 300px
       height: 300px
       object-fit: cover
+      border-radius: 100%
   &_form
     color: #000000
     justify-content: space-between

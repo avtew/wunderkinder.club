@@ -17,36 +17,33 @@
 
     <header class="header">
       <div class="container container_header">
-        <nav class="nav">
-          <div class="logo logo_nav">
-            <img src="icons/logo.svg" alt="logo">
-          </div>
-          <ul class="menu">
-            <li class="menu__item"><a class="menu__link" href="#about" data-i18n="about">о клубе</a></li>
-            <li class="menu__item"><a class="menu__link" href="coaches" data-i18n="coaches">тренеры</a></li>
-            <li class="menu__item"><a class="menu__link" href="#contacts" data-i18n="contacts">контакты</a></li>
-          </ul>
-          <div class="menu__drop hover">
-            <span class="menu_lang menu__lang_active">ru</span>
-            <div class="menu__droplist">
-              <span class="menu__lang menu__lang_ru">ru</span>
-              <!-- <span class="menu__lang menu__lang_ua">ua</span> -->
-              <span class="menu__lang menu__lang_en">en</span>
-            </div>
-          </div>
-        </nav>
-        <div class="burger">
-          <div class="burger__line burger__line-1"></div>
-          <div class="burger__line burger__line-2"></div>
-          <div class="burger__line burger__line-3"></div>
-        </div>
-        <div class="logo">
+        <div class="menu">
           <img src="icons/logo.svg" alt="logo">
-          <h1 data-i18n="logo-name">детский шахматный клуб</h1>
+          <nav class="menu__nav">
+            <ul class="menu__list">
+              <li><a class="menu__link" href="#about" data-i18n="about">о клубе</a></li>
+              <li><a class="menu__link" href="#coaches" data-i18n="coaches">тренеры</a></li>
+              <li><a class="menu__link" href="#contacts" data-i18n="contacts">контакты</a></li>
+              <li>
+                <div class="menu_link menu__drop hover">
+                  <span class="menu_lang menu__lang_active">ru</span>
+                  <div class="menu__droplist">
+                    <span class="menu__lang menu__lang_ru">ru</span>
+                    <span class="menu__lang menu__lang_en">en</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <div class="burger">
+            <div class="burger__line burger__line-1"></div>
+            <div class="burger__line burger__line-2"></div>
+            <div class="burger__line burger__line-3"></div>
+          </div>
         </div>
         <div class="header__text">
-          <h2 data-i18n="header-title">Откройте для себя и своего ребёнка увлекательный мир шахмат</h2>
-          <span data-i18n="header-subtitle">Шахматы - это интересно, полезно и престижно</span>
+          <h1 data-i18n="h1">Детский шахматный клуб "Вундеркинды"</h1>
+          <span data-i18n="sub">Откройте для своего ребёнка увлекательный мир шахмат.<br>Это интересно, полезно и престижно.</span>
           <form action="">
             <button class="button" data-i18n="join">вступить в клуб</button>
           </form>
@@ -54,12 +51,9 @@
       </div>
     </header>
 
-    <section class="about" id="about">
+    <section class="white" id="about">
       <div class="container container_nm">
         <div class="row g-0">
-          <div class="col-lg-6 col-sm-12 square square_photo">
-            <img src="img/img_1.jpg" alt="Boy with chessboard in front of laptop">
-          </div>
           <div class="col-lg-6 col-sm-12 square square_text">
             <h2 data-i18n="about">О клубе</h2>
             <div>
@@ -67,6 +61,9 @@
               <p>Своей целью мы считаем не только научить детей играть в шахматы, помогать им развивать логическое мышление, внимание и усидчивость, но и создать благоприятную, дружескую атмосферу во время образовательного процесса и за его пределами.</p>
               <p>Мы принимаем детей от 5 до 14 лет и различной подготовки - как самого начального уровня, так и тех, кто уже знаком с основами игры и желает дальше познавать премудрости шахматного искусства.</p>
             </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 square square_image">
+            <img src="img/about.jpg" alt="Image by macrovector on Freepik">
           </div>
         </div>
       </div>
@@ -79,30 +76,30 @@
           <div class="row gy-5">
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
-                <img src="icons/online.svg" alt="Icon">
-                <div class="process__title">Дистанционное<br>обучение</div>
-                <div class="process__sub">Доступ к знаниям<br>из любой точки мира</div>
+                <img src="icons/icon_online.svg" alt="Image by macrovector on Freepik">
+                <span class="process__title">Дистанционное обучение</span>
+                <span class="process__sub">Доступ к знаниям из любой точки мира</span>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
-                <img src="icons/group.svg" alt="Icon">
-                <div class="process__title">Групповые<br>занятия</div>
-                <div class="process__sub">Группы для начинающих<br>и для разрядников</div>
+                <img src="icons/icon_group.svg" alt="Image by macrovector on Freepik">
+                <span class="process__title">Групповые занятия</span>
+                <span class="process__sub">Группы для начинающих и для разрядников</span>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
-                <img src="icons/person.svg" alt="Icon">
-                <div class="process__title">Индивидуальные<br>занятия</div>
-                <div class="process__sub">Гибкий график<br>и персональный подход</div>
+                <img src="icons/icon_person.svg" alt="Image by macrovector on Freepik">
+                <span class="process__title">Индивидуальные занятия</span>
+                <span class="process__sub">Гибкий график и персональный подход</span>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
-                <img src="icons/tour.svg" alt="Icon">
-                <div class="process__title">Онлайн<br>турниры</div>
-                <div class="process__sub">Ежемесячные турниры<br>для всех учеников</div>
+                <img src="icons/icon_tour.svg" alt="Image by macrovector on Freepik">
+                <span class="process__title">Онлайн<br>турниры</span>
+                <span class="process__sub">Ежемесячные турниры<br>для всех учеников</span>
               </div>
             </div>
           </div>
@@ -113,32 +110,36 @@
       </div>
     </section>
 
-    <section class="trainers" id="coaches">
+    <section class="white" id="coaches">
       <div class="container container_nm">
         <div class="row g-0">
+          <div class="col-lg-6 col-sm-12 order-sm-first square square_image">
+            <img src="img/coaches.jpg" alt="Image by macrovector on Freepik">
+          </div>
           <div class="col-lg-6 col-sm-12 order-lg-first square square_text">
             <h2 data-i18n="coaches">Тренеры</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta exercitationem saepe obcaecati in accusantium delectus iste quae? Culpa alias itaque unde similique aut inventore atque impedit adipisci. Impedit, tenetur illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias similique vitae quis quas harum. Voluptates, iure voluptate temporibus corrupti in quod molestiae vitae, excepturi, eaque quos maiores eos qui ex.</p>
-          </div>
-          <div class="col-lg-6 col-sm-12 order-sm-first square square_photo">
-            <img src="img/img_2.jpg" alt="Boy and mom with chessboard">
+            <div>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus et a porro quibusdam sint hic minima, vero harum nihil odio quaerat est aliquid repellendus, vel inventore doloribus excepturi adipisci dolore</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus adipisci mollitia consequuntur pariatur, accusantium in amet suscipit quo, rerum inventore fugiat, obcaecati sed. Labore dolore ratione molestias omnis nesciunt.</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam. Nam!</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="persons">
+    <section class="coaches">
       <div class="container container_nm">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3 data-i18n="liudmyla">Людмила Горошкова</h3>
-            <img class="persons__photo" src="img/liudmyla.jpg" alt="Liudmyla Goroshkova">
-            <button class="button button_person" id="0" data-i18n="more">подробнее</button>
+            <img src="img/liudmyla.jpg" alt="Liudmyla Goroshkova">
+            <button class="button" id="0" data-i18n="more">подробнее</button>
           </div>
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3 data-i18n="maksym">Максим Горошков</h3>
-            <img class="persons__photo" src="img/maksym.jpg" alt="Maksym Goroshkov">
-            <button class="button button_person" id="1" data-i18n="more">подробнее</button>
+            <img src="img/maksym.jpg" alt="Liudmyla Goroshkova">
+            <button class="button" id="1" data-i18n="more">подробнее</button>
           </div>
         </div>
       </div>
@@ -146,7 +147,7 @@
         <div class="popup__close"></div>
         <div class="popup__photo"></div>
         <div class="popup__info">
-          <h3 class="popup__name"></h3>
+          <h3 class="popup__name">Name</h3>
           <p class="popup__about"></p>
           <div>
             <ul class="popup__list">
@@ -163,21 +164,6 @@
     <section class="contacts" id="contacts">
       <div class="container container_nm">
         <div class="row g-0">
-          <div class="col-lg-6 col-sm-12 square square_info">
-            <h2 data-i18n="contacts">Контакты</h2>
-            <div class="logo logo_contacts">
-              <img src="icons/logo.svg" alt="logo">
-              <span data-i18n="logo-name">детский шахматный клуб</span>
-            </div>
-            <div class="contacts__social">
-              <a href=""><div class="contacts__icon">
-                <span class="icon-instagram"></span>
-              </div></a>
-              <a href=""><div class="contacts__icon">
-                <span class="icon-facebook"></span>
-              </div></a>
-            </div>
-          </div>
           <div class="col-lg-6 col-sm-12 square square_form">
             <div class="contacts__message">
               <h3 data-i18n="write">Напишите нам</h3>
@@ -189,6 +175,24 @@
               </form>
             </div>
           </div>
+          <div class="col-lg-6 col-sm-12 square square_info">
+            <h2 data-i18n="contacts">Контакты</h2>
+            <div class="logo">
+              <img src="icons/logo.svg" alt="logo">
+              <span data-i18n="logo-name">детский шахматный клуб</span>
+            </div>
+            <div class="contacts__social">
+              <a href=""><div class="contacts__icon">
+                <span class="icon-facebook"></span>
+              </div></a>
+              <a href=""><div class="contacts__icon">
+                <span class="icon-instagram"></span>
+              </div></a>
+              <a href=""><div class="contacts__icon">
+                <span class="icon-mail"></span>
+              </div></a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -196,9 +200,10 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__info">
+          <span class="icon-school"></span>
           <div class="footer__copy">Вундеркинды, 2023</div>
           <nav>
-            <ul class="menu menu_center">
+            <ul class="menu__list menu__list_center">
               <li class="menu__item"><a class="menu__link menu__link_footer" href="#about" data-i18n="about">о клубе</a></li>
               <li class="menu__item"><a class="menu__link menu__link_footer" href="#trainers" data-i18n="coaches">тренеры</a></li>
             </ul>
