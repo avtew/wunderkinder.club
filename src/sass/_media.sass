@@ -6,6 +6,10 @@
       &__text
         h1
           width: 55%
+
+  .square
+    &_text
+      font-size: 1rem
   
 @media (max-width: 1199px)
   .header
@@ -14,6 +18,14 @@
           font-size: 2.5rem
         span
           width: 50%
+  h2
+    font-size: 1.5rem
+
+  .square
+    padding: 40px
+    &_text
+      gap: 20px
+      font-size: 1rem
 
 @media (max-width: 991px)
   .header
@@ -23,6 +35,33 @@
         font-size: 2rem
       span
         font-size: 1.25rem
+
+  .square
+    padding: 80px
+    aspect-ratio: auto
+    &_image
+      display: none
+    &_text
+      gap: 40px
+      font-size: 1.25rem
+
+  .process
+      &__wrapper
+        gap: 40px
+        padding: 80px 0
+
+  .footer
+    &__info
+      flex-direction: column
+      div, nav
+        width: auto
+    &__studio
+      justify-content: center
+
+  .menu__list
+    &_footer
+      flex-direction: column
+      gap: 20px
 
 @media (max-width: 767px)
   .header
@@ -52,6 +91,10 @@
   .burger
     display: flex
 
+  .square
+    &_text
+      font-size: 1rem
+
 @media (max-width: 575px)
   .header
     &__text
@@ -62,6 +105,14 @@
         width: 65%
         font-size: 1rem
 
+  .square
+    padding: 40px
+
+  .process
+    &__wrapper
+      gap: 40px
+      padding: 40px 0
+
 @media (max-width: 499px)
   .header
     &__text
@@ -71,3 +122,9 @@
       span
         width: 75%
         font-size: 1rem
+
+  .square
+    padding: 40px
+    &_text
+      gap: 20px
+      font-size: 1rem
