@@ -2,19 +2,15 @@ export const coaches = [
   {
     "name": 'Людмила Горошкова',
     "photo": 'url("../img/liudmyla.jpg")',
-    "about": '',
-    "age": "31",
+    "about": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam.',
     "rank": 'Кандидат в мастера спорта',
     "rate": '2000',
-    "link": 'http://fide.com'
   },
   {
     "name": 'Максим Горошков',
     "photo": 'url("../img/maksym.jpg")',
-    "about": '',
-    "age": '18',
+    "about": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam.',
     "rank": 'Мастер FIDE',
     "rate": '2278',
-    "link": ''
   }
 ]

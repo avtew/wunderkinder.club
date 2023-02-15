@@ -2,11 +2,11 @@
   position: fixed
   top: 50%
   left: 50%
-  z-index: 3
+  z-index: 2
   display: none
-  margin: auto
   color: #000000
-  background-color: #F6F6F6
+  font: 1rem Montserrat-Regular, sans-serif
+  background-color: $background-color
   transform: translate(-50%, -50%)
   &__photo
     width: 450px
@@ -20,9 +20,26 @@
     justify-content: space-between
     width: 450px
     padding: 40px
-    h3
-      align-self: center
+    div
+      h3
+        align-self: center
+      span
+        position: relative
+        display: block
+        margin: 10px 0 0 20px
+        color: $main-color
+        &:before
+          position: absolute
+          left: -20px
+          content: ''
+          display: block 
+          width: 15px
+          height: 15px
+          background: url("../icons/pawn.svg")
     p
+      display: flex
+      flex-grow: 2
+      align-items: center
       margin: 0
   &__list
     display: flex
@@ -51,7 +68,7 @@
       left: 13px
       width: 24px
       height: 4px
-      background: #ffffff
+      background: $background-color
     &:before
       transform: rotate(45deg)
     &:after

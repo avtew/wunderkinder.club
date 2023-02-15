@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Вундеркинды - детский шахматный клуб</title>
+    <title data-i18n="title">Вундеркинды - детский шахматный клуб</title>
     <link rel="shortcut icon" type="image/x-icon" href="icons/favicon.ico">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
@@ -15,17 +15,18 @@
 
     <div class="shade"></div>
 
-    <header class="header">
+    <header class="header" id="head">
       <div class="container container_header">
         <div class="menu">
-          <img src="icons/logo.svg" alt="logo">
+          <img src="icons/logo.svg" alt="logo" class="logo">
           <nav class="menu__nav">
+            <img src="icons/logo.svg" alt="logo">
             <ul class="menu__list">
-              <li><a class="menu__link" href="#about" data-i18n="about">о клубе</a></li>
-              <li><a class="menu__link" href="#coaches" data-i18n="coaches">тренеры</a></li>
-              <li><a class="menu__link" href="#contacts" data-i18n="contacts">контакты</a></li>
+              <li class="menu__item"><a class="menu__link" href="#about" data-i18n="about">о клубе</a></li>
+              <li class="menu__item"><a class="menu__link" href="#coaches" data-i18n="coaches">тренеры</a></li>
+              <li class="menu__item"><a class="menu__link" href="#contacts" data-i18n="contacts">контакты</a></li>
               <li>
-                <div class="menu_link menu__drop hover">
+                <div class="menu_link menu__drop">
                   <span class="menu_lang menu__lang_active">ru</span>
                   <div class="menu__droplist">
                     <span class="menu__lang menu__lang_ru">ru</span>
@@ -43,27 +44,37 @@
         </div>
         <div class="header__text">
           <h1 data-i18n="h1">Детский шахматный клуб "Вундеркинды"</h1>
-          <span data-i18n="sub">Откройте для своего ребёнка увлекательный мир шахмат.<br>Это интересно, полезно и престижно.</span>
-          <form action="">
-            <button class="button" data-i18n="join">вступить в клуб</button>
-          </form>
+          <span data-i18n="sub">Откройте для своего ребёнка увлекательный мир шахмат. Шахматы - это интересно, полезно и престижно.</span>
+          <button class="button button_join" data-i18n="join">вступить в клуб</button>
+        </div>
+        <div class="modal">
+          <div class="modal__close"></div>
+          <div class="modal__message">
+            <h3 data-i18n="write">Напишите нам</h3>
+            <form class="modal__form">
+              <input name="name" type="text" placeholder="Name">
+              <input name="email" required type="email" placeholder="Email">
+              <textarea name="text" required placeholder="Your message..."></textarea>
+              <button class="button" data-i18n="send">отправить</button>
+            </form>
+          </div>
         </div>
       </div>
     </header>
 
-    <section class="white" id="about">
+    <section class="info" id="about">
       <div class="container container_nm">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 square square_text">
             <h2 data-i18n="about">О клубе</h2>
             <div>
-              <p>Детский шахматный клуб "Вундеркинды" основан в 2018 году. С тех пор его постоянными участниками стали дети и их родители из многих стран.</p>
-              <p>Своей целью мы считаем не только научить детей играть в шахматы, помогать им развивать логическое мышление, внимание и усидчивость, но и создать благоприятную, дружескую атмосферу во время образовательного процесса и за его пределами.</p>
-              <p>Мы принимаем детей от 5 до 14 лет и различной подготовки - как самого начального уровня, так и тех, кто уже знаком с основами игры и желает дальше познавать премудрости шахматного искусства.</p>
+              <p data-i18n="about-text-1">Детский шахматный онлайн-клуб "Вундеркинды" основан в 2018 году. С тех пор его постоянными участниками стали дети и их родители из многих стран.</p>
+              <p data-i18n="about-text-2">Своей целью мы считаем не только научить детей играть в шахматы, помогать им развивать логическое мышление, внимание и усидчивость, но и создать благоприятную, дружескую атмосферу во время образовательного процесса и за его пределами.</p>
+              <p data-i18n="about-text-3">Мы принимаем детей от 5 до 14 лет и различной подготовки - как начинающих шахматистов, так и тех, кто уже знаком с основами игры и желает дальше познавать премудрости шахматного искусства.</p>
             </div>
           </div>
           <div class="col-lg-6 col-sm-12 square square_image">
-            <img src="img/about.jpg" alt="Image by macrovector on Freepik">
+            <img src="img/about.png" alt="Шахматные уроки онлайн">
           </div>
         </div>
       </div>
@@ -77,51 +88,49 @@
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
                 <img src="icons/icon_online.svg" alt="Image by macrovector on Freepik">
-                <span class="process__title">Дистанционное обучение</span>
-                <span class="process__sub">Доступ к знаниям из любой точки мира</span>
-              </div>
-            </div>
-            <div class="col-xl-3 col-md-6">
-              <div class="process__card">
-                <img src="icons/icon_group.svg" alt="Image by macrovector on Freepik">
-                <span class="process__title">Групповые занятия</span>
-                <span class="process__sub">Группы для начинающих и для разрядников</span>
+                <span class="process__title" data-i18n="process_title_1">Дистанционное обучение</span>
+                <span class="process__sub" data-i18n="process_sub_1">Доступность из любой точки мира</span>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
                 <img src="icons/icon_person.svg" alt="Image by macrovector on Freepik">
-                <span class="process__title">Индивидуальные занятия</span>
-                <span class="process__sub">Гибкий график и персональный подход</span>
+                <span class="process__title" data-i18n="process_title_2">Индивидуальные занятия</span>
+                <span class="process__sub" data-i18n="process_sub_2">Гибкий график и персональный подход</span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6">
+              <div class="process__card">
+                <img src="icons/icon_group.svg" alt="Image by macrovector on Freepik">
+                <span class="process__title" data-i18n="process_title_3">Групповые занятия</span>
+                <span class="process__sub" data-i18n="process_sub_3">Группы для начинающих и для разрядников</span>
               </div>
             </div>
             <div class="col-xl-3 col-md-6">
               <div class="process__card">
                 <img src="icons/icon_tour.svg" alt="Image by macrovector on Freepik">
-                <span class="process__title">Онлайн<br>турниры</span>
-                <span class="process__sub">Ежемесячные турниры<br>для всех учеников</span>
+                <span class="process__title" data-i18n="process_title_4">Онлайн - турниры</span>
+                <span class="process__sub" data-i18n="process_sub_4">Ежемесячные турниры для всех участников</span>
               </div>
             </div>
           </div>
-          <form action="">
-            <button class="button" data-i18n="joinus">присоединиться</button>
-          </form>
+          <button class="button button_join" data-i18n="joinus">присоединиться</button>
         </div>
       </div>
     </section>
 
-    <section class="white" id="coaches">
+    <section class="info" id="coaches">
       <div class="container container_nm">
         <div class="row g-0">
           <div class="col-lg-6 col-sm-12 order-sm-first square square_image">
-            <img src="img/coaches.jpg" alt="Image by macrovector on Freepik">
+            <img src="img/coaches.png" alt="Тренеры по шахматам">
           </div>
           <div class="col-lg-6 col-sm-12 order-lg-first square square_text">
             <h2 data-i18n="coaches">Тренеры</h2>
             <div>
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus et a porro quibusdam sint hic minima, vero harum nihil odio quaerat est aliquid repellendus, vel inventore doloribus excepturi adipisci dolore</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis natus adipisci mollitia consequuntur pariatur, accusantium in amet suscipit quo, rerum inventore fugiat, obcaecati sed. Labore dolore ratione molestias omnis nesciunt.</p>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam. Nam!</p>
+              <p data-i18n="coaches-text-1">Мы любим шахматы и пронесли эту любовь через всю свою жизнь - от первых детских партий в кругу семьи до национальных и международных чемпионатов.</p>
+              <p data-i18n="coaches-text-2">Мы понимаем - для того чтобы учить этой игре недостаточно любить её и уметь играть.</p>
+              <p data-i18n="coaches-text-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam. Nam!</p>
             </div>
           </div>
         </div>
@@ -136,14 +145,14 @@
             <div>
               <img src="img/liudmyla.jpg" alt="Liudmyla Goroshkova">
             </div>
-            <button class="button" id="0" data-i18n="more">подробнее</button>
+            <button class="button button_more" id="0" data-i18n="more">подробнее</button>
           </div>
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3 data-i18n="maksym">Максим Горошков</h3>
             <div>
               <img src="img/maksym.jpg" alt="Liudmyla Goroshkova">
             </div>
-            <button class="button" id="1" data-i18n="more">подробнее</button>
+            <button class="button button_more" id="1" data-i18n="more">подробнее</button>
           </div>
         </div>
       </div>
@@ -151,16 +160,11 @@
         <div class="popup__close"></div>
         <div class="popup__photo"></div>
         <div class="popup__info">
-          <h3 class="popup__name">Name</h3>
-          <p class="popup__about"></p>
           <div>
-            <ul class="popup__list">
-              <li class="popup__item"><span>Возраст: </span><span class="popup__age"></span></li>
-              <li class="popup__item"><span>Звание: </span><span class="popup__rank"></span></li>
-              <li class="popup__item"><span>Рейтинг: </span><span class="popup__rate"></span></li>
-              <li class="popup__item"><span>Профиль: </span><span class="popup__link"></span></li>
-            </ul>
+            <h3 class="popup__name">name</h3>
+            <span class="popup__rank"></span>
           </div>
+          <p class="popup__about"></p>
         </div>
       </div>
     </section>
@@ -168,7 +172,7 @@
     <section class="contacts" id="contacts">
       <div class="container container_nm">
         <div class="row g-0">
-          <div class="col-lg-6 col-sm-12 square square_form">
+          <div class="col-lg-6 col-md-12 order-lg-first order-last square square_form">
             <div class="contacts__message">
               <h3 data-i18n="write">Напишите нам</h3>
               <form class="contacts__form">
@@ -179,9 +183,10 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-6 col-sm-12 order-sm-1 square">
+          <div class="col-lg-6 col-md-12 order-lg-last order-first square">
             <h2 data-i18n="contacts">Контакты</h2>
-            <img src="icons/logo.svg" alt="logo">
+            <img src="img/contacts.png" alt="logo">
+            <!-- <p>Вы можете связаться с нами используя форму для обратной связи или найти нас в ваших любимых социальных сетях</p> -->
             <div class="contacts__social">
               <a href=""><div class="contacts__icon">
                 <span class="icon-instagram"></span>
@@ -202,17 +207,22 @@
       <div class="container">
         <div class="footer__info">
           <span class="icon-school"></span>
-          <div class="footer__copy">Вундеркинды, 2023</div>
+          <div class="footer__copy" data-i18n="copy">Вундеркинды, 2023</div>
           <nav>
             <ul class="menu__list menu__list_footer">
               <li class="menu__item"><a class="menu__link menu__link_footer" href="#about" data-i18n="about">о клубе</a></li>
               <li class="menu__item"><a class="menu__link menu__link_footer" href="#coaches" data-i18n="coaches">тренеры</a></li>
             </ul>
           </nav>
-          <div class="footer__studio">Дизайн: ...</div>
+          <div class="footer__studio">
+            <span>Design by <a href="https://github.com/avtew">avtew</a></span>
+            <span>Images by <a href="https://www.freepik.com/author/macrovector">macrovector</a></span>
+          </div>
         </div>
       </div>
     </footer>
+
+    <a class="up" href="#head"><div></div></a>
 
     <script src="js/script.js" type="module"></script>
 
