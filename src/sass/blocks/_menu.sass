@@ -1,29 +1,75 @@
 .menu
   display: flex
-  gap: 100px
-  margin: 0
-  padding: 0
-  text-transform: uppercase
-  list-style-type: none
-  &__item
+  justify-content: space-between
+  align-items: flex-start
+  img
+      width: 100px
+      height: 100px
+  &__nav
+    position: relative
+    z-index: 2
+    display: flex
+    transition: 0.5s
+    img
+      display: none
+      border: 2px solid #ffffff
+  &__list
+    display: flex
+    gap: 50px
+    padding: 0
+    text-transform: uppercase
+    list-style-type: none
+    &_footer
+      justify-content: center
+      margin: 0
+  &__drop
+    position: relative
+    display: inline-block
+    color: #ffffff
+    font-family: Montserrat-Bold, sans-serif
+    text-transform: uppercase
+    cursor: pointer
+    // &.hover
+    //   &:hover .menu__droplist
+    //     display: flex
     &:after
       content: ''
       display: block
       width: 0%
-      height: 2px
-      background-color: $accent-color
+      height: 3px
+      background-color: $main-color
       transition: 0.2s all
     &:hover
       &:after
         width: 100%
+  &__droplist
+    position: absolute
+    display: none
+    flex-direction: column
+    &.show
+      display: flex
   &__lang
-    margin-left: auto
+    padding-top: 5px
+    &:hover
+      color: $main-color
   &__link
     color: #ffffff
-    text-decoration: none
+    font-family: Montserrat-Bold, sans-serif
+    &:after
+      content: ''
+      display: block
+      width: 0%
+      height: 3px
+      background-color: $main-color
+      transition: 0.2s all
+    &:hover
+      &:after
+        width: 100%
     &_footer
       color: #000000
+      font-family: Montserrat-Regular, sans-serif
   &_center
     justify-content: center
+    margin: 0
     
     

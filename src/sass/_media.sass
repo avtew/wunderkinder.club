@@ -1,156 +1,228 @@
-@media (max-width: 1199px)
-  .square
-    font-size: 1rem
-    &_info
-      img
-        width: 200px
-        height: 200px
+@media (min-width: 1921px)
+  .menu
+    &__link, &__drop
+      color: #000000
+  
+@media (max-width: 1399px)
+  .menu
+    &__link, &__drop
+      color: #000000
 
-  .logo
-    &_contacts
-      img
-        width: 100px
-        height: 100px
-      span
-        font-size: 2rem
+  .header
+      &__text
+        h1
+          width: 55%
+
+  .square
+    &_text, &_contacts
+      font-size: 1rem
+  
+@media (max-width: 1199px)
+  .header
+      &__text
+        h1
+          font-size: 2.5rem
+        span
+          width: 50%
+  h2
+    font-size: 1.5rem
+
+  .square
+    padding: 40px
+    &_text
+      gap: 20px
+
+  .popup
+    &__close
+      top: 0
+      left: 850px
 
 @media (max-width: 991px)
-  .square
-    font-size: 1.5rem
-    &_info
-      img
-        width: 400px
-        height: 400px
-    &_photo
-      display: none
-
-  .logo
-    &_contacts
-      img
-        width: 200px
-        height: 200px
-      span
-        font-size: 3.5rem
-
-  .menu
-    gap: 50px
-    
-@media (max-width: 767px)
-  h1
-    font-size: 2rem
-
-  h2
-    font-size: 2rem
-
-  h3
-    font-size: 1.5rem
-
-  .square
-    padding: 40px
-    font-size: 1rem
-    &_info
-      img
-        width: 250px
-        height: 250px
-
-  .logo
-    &_contacts
-      img
-        width: 100px
-        height: 100px
-      span
+  .header
+    &__text
+      h1
+        width: 55%
         font-size: 2rem
+      span
+        font-size: 1.25rem
+
+  .square
+    padding: 80px
+    aspect-ratio: auto
+    &_image
+      display: none
+    &_text, &_contacts
+      gap: 40px
+      font-size: 1.25rem
 
   .process
-    padding: 40px
-    &__wrapper
-      padding: 0
+      &__wrapper
+        gap: 40px
+        padding: 80px 0
 
   .footer
     &__info
       flex-direction: column
-      gap: 50px
-      div
-        width: 100%
-    &__copy
-      display: flex
-      justify-content: center
-      margin: 0
-      order: 1
+      div, nav
+        width: auto
     &__studio
       justify-content: center
-      order: 2
-
-  .menu
-    &_center
-      flex-direction: column
+    &__studio
       align-items: center
 
-@media (max-width: 575px)
+  .menu__list
+    &_footer
+      flex-direction: column
+      gap: 20px
+
+  .popup
+    flex-direction: column
+    &__info
+      gap: 20px
+    &__close
+      top: -50px
+      left: 450px
+
+@media (max-width: 767px)
+  .header
+    padding: 20px 0
+    background: url("../img/header_sm.jpg") bottom / cover no-repeat
+    &__text
+      justify-content: flex-start
+      align-items: center
+      margin-top: 80px
+      h1
+        width: 80%
+        text-align: center
+      span
+        width: 90%
+      button
+        &:hover
+          background-color: $main-color
+
+  .menu
+    &__nav
+      position: fixed
+      top: 0
+      gap: 50px
+      right: -575px
+      width: 75%
+      height: 100%
+      padding: 80px
+      background-color: $main-color
+      &.open
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        right: 0px
+        img
+          display: block
+    &__list
+      flex-direction: column
+    &__link, &__drop
+      color: #ffffff
+      &_footer
+        color: #000000
+
   .burger
     display: flex
 
-  .header
-    padding: 20px 0
-    nav
-      position: fixed
-      top: 0
-      left: 575px
-      width: 100%
-      height: 100%
-      padding: 100px
-      background-color: $main-color
+  .square
+    &_text, &_contacts
+      font-size: 1rem
 
-  .logo
-    margin: 20px 0
-    img
-      width: 100px
-      height: 100px
+  .modal
+    width: 450px
+    &__close
+      top:  0
+      left: 400px
+
+
+@media (max-width: 575px)
+  .header
+    &__text
+      h1
+        width: 60%
+        font-size: 1.5rem
+      span
+        width: 65%
+        font-size: 1rem
 
   .button
-    width: 150px
-    height: 45px
+    width: 160px
+    height: 48px
     font-size: 0.75rem
 
   .square
-      padding: 40px
-      &_info
+    padding: 40px
+    &_info
+      div
         img
-          width: 200px
-          height: 200px
+          width: 250px
+          height: 250px
 
-  .logo
-    justify-content: center
-    span
-      display: none
-    &_contacts
-      img
-        width: 150px
-        height: 150px
+  .process
+    &__wrapper
+      gap: 40px
+      padding: 40px 0
+    &__title
+      width: 200px
+      font: 1.125rem Montserrat-SemiBold, sans-serif
+    &__sub
+      width: 220px
+      font: 1rem Montserrat-Regular, sans-serif
 
+  .popup
+    &__close
+      top: 0px
+      left: 400px
+
+@media (max-width: 499px)
   .header
-    .menu
-      flex-direction: column
-      align-items: flex-start
-      font-size: 1.5rem
-      &__lang
-        margin: 0
     &__text
-      p
+      h1
+        width: 70%
+        font-size: 1.25rem
+      span
+        width: 75%
         font-size: 1rem
 
-  .contacts
-    &__message
-      gap: 10px
-    &__form
-      gap: 10px
-
-@media (max-width: 376px)
-  h1
-    font-size: 1.5rem
-
   h2
-    font-size: 1.5 rem
+    font-size: 1.25rem
+
+  h3
+    font-size: 1.25rem
 
   .square
-    font-size: 0.9rem
+    padding: 40px
+    &_text, &_contacts
+      gap: 20px
+      font-size: 1rem
+
+  .popup
+    font-size: 0.75rem
+    &__photo
+      display: none
+    &__info
+      gap: 20px
+      width: 300px
+      padding: 20px
+    &__close
+      top: 0px
+      left: 250px
+      background-color: $background-color
+      &:hover
+        background-color: $background-color
+      &:before, &:after
+        background: $main-color
+
+  .modal
+    width: 350px
+    &__close
+      top:  0
+      left: 300px
+      background-color: $background-color
+      &:hover
+        background-color: $background-color
+      &:before, &:after
+        background: $main-color
