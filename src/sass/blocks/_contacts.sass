@@ -1,37 +1,8 @@
 .contacts
   background-color: #ffffff
-  &__message
-    display: flex
-    flex-direction: column
-    align-items: center
-    gap: 20px
-    width: 100%
-    height: 100%
-  &__form
-    display: flex
-    flex-direction: column
-    align-items: center
-    flex-grow: 2
-    gap: 20px
-    width: 100%
-    input
-      padding: 20px
-      width: 100%
-      height: 40px
-      background-color: $background-color
-      border: none
-      outline: none
-    textarea
-      flex-grow: 2
-      padding: 20px
-      width: 100%
-      min-height: 200px
-      background-color: $background-color
-      resize: none
-      border: none
-      outline: none
   &__social
     display: flex
+    flex-direction: row
     gap: 20px
   &__icon
     display: flex
@@ -42,6 +13,6 @@
     &:hover span
       color: $accent-color
     span
-      color: $main-color
+      color: #ffffff
       font-size: 2rem
       transition: 0.2s all

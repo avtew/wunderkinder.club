@@ -27,10 +27,10 @@
               <li class="menu__item"><a class="menu__link" href="#contacts" data-i18n="contacts">контакты</a></li>
               <li>
                 <div class="menu_link menu__drop">
-                  <span class="menu_lang menu__lang_active">ru</span>
+                  <span class="menu_lang menu__lang_active" id="active">ru</span>
                   <div class="menu__droplist">
-                    <span class="menu__lang menu__lang_ru">ru</span>
-                    <span class="menu__lang menu__lang_en">en</span>
+                    <span class="menu__lang menu__lang_ru" id="ru">ru</span>
+                    <span class="menu__lang menu__lang_en" id="en">en</span>
                   </div>
                 </div>
               </li>
@@ -74,7 +74,10 @@
             </div>
           </div>
           <div class="col-lg-6 col-sm-12 square square_image">
-            <img src="img/about.png" alt="Шахматные уроки онлайн">
+            <img class="info__img-about" src="img/about.png" alt="Шахматные уроки онлайн">
+            <!-- <div class="bubble speech">
+              Первое правило клуба - <br> расскажи всем о клубе.
+            </div> -->
           </div>
         </div>
       </div>
@@ -128,9 +131,9 @@
           <div class="col-lg-6 col-sm-12 order-lg-first square square_text">
             <h2 data-i18n="coaches">Тренеры</h2>
             <div>
-              <p data-i18n="coaches-text-1">Мы любим шахматы и пронесли эту любовь через всю свою жизнь - от первых детских партий в кругу семьи до национальных и международных чемпионатов.</p>
-              <p data-i18n="coaches-text-2">Мы понимаем - для того чтобы учить этой игре недостаточно любить её и уметь играть.</p>
-              <p data-i18n="coaches-text-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis minima officiis vero culpa totam fugit ab pariatur in porro dolorum possimus, saepe corporis facilis temporibus perferendis deleniti, sequi quam. Nam!</p>
+              <p data-i18n="coaches-text-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum assumenda sed dicta harum non eveniet perferendis quod error itaque provident alias ab illum, praesentium amet? Eligendi nemo itaque illo ratione?</p>
+              <p data-i18n="coaches-text-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur corrupti corporis quaerat eos saepe doloribus dolores ex. Ullam assumenda quae officiis nostrum? Nostrum dolor id odio, mollitia officiis nisi unde?</p>
+              <p data-i18n="coaches-text-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa at quidem mollitia temporibus necessitatibus amet? Laudantium nihil ipsam eos voluptate dolor, omnis esse. Dolore repudiandae esse modi recusandae nemo nisi!</p>
             </div>
           </div>
         </div>
@@ -143,16 +146,16 @@
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3 data-i18n="liudmyla">Людмила Горошкова</h3>
             <div>
-              <img src="img/liudmyla.jpg" alt="Liudmyla Goroshkova">
+              <img src="img/liudmyla.jpg" alt="Людмила Горошкова - кандидат в мастера спорта">
             </div>
             <button class="button button_more" id="0" data-i18n="more">подробнее</button>
           </div>
           <div class="col-lg-6 col-sm-12 square square_info">
             <h3 data-i18n="maksym">Максим Горошков</h3>
             <div>
-              <img src="img/maksym.jpg" alt="Liudmyla Goroshkova">
+              <img src="img/maksym.jpg" alt="Маким Горошков - мастер FIDE">
             </div>
-            <button class="button button_more" id="1" data-i18n="more">подробнее</button>
+            <button class="button button_more" id="2" data-i18n="more">подробнее</button>
           </div>
         </div>
       </div>
@@ -172,21 +175,14 @@
     <section class="contacts" id="contacts">
       <div class="container container_nm">
         <div class="row g-0">
-          <div class="col-lg-6 col-md-12 order-lg-first order-last square square_form">
-            <div class="contacts__message">
-              <h3 data-i18n="write">Напишите нам</h3>
-              <form class="contacts__form">
-                <input name="name" type="text" placeholder="Name">
-                <input name="email" required type="email" placeholder="Email">
-                <textarea name="text" required placeholder="Your message..."></textarea>
-                <button class="button button_submit" data-i18n="send">отправить</button>
-              </form>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-12 order-lg-last order-first square">
+          <div class="col-lg-6 col-md-12 square square_contacts">
             <h2 data-i18n="contacts">Контакты</h2>
-            <img src="img/contacts.png" alt="logo">
-            <!-- <p>Вы можете связаться с нами используя форму для обратной связи или найти нас в ваших любимых социальных сетях</p> -->
+            <!-- <img src="img/contacts.png" alt="logo"> -->
+            <div>
+              <p data-i18n="contacts-text-1">Вы можете связаться с нами для получения всей необходимой информации.</p>
+              <p data-i18n="contacts-text-2">Отправьте сообщение через форму обратной связи или ищите нас в ваших любимых социальных сетях.</p>
+              <p data-i18n="contacts-text-3">Для всех новых участников мы предлагаем одно <strong>бесплатное</strong> пробное занятие.</p>
+            </div>
             <div class="contacts__social">
               <a href=""><div class="contacts__icon">
                 <span class="icon-instagram"></span>
@@ -197,6 +193,17 @@
               <a href=""><div class="contacts__icon">
                 <span class="icon-mail"></span>
               </div></a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 square square_form">
+            <div class="modal__message">
+              <h3 data-i18n="write">Напишите нам</h3>
+              <form class="modal__form">
+                <input name="name" type="text" placeholder="Name">
+                <input name="email" required type="email" placeholder="Email">
+                <textarea name="text" required placeholder="Your message..."></textarea>
+                <button class="button button_submit" data-i18n="send">отправить</button>
+              </form>
             </div>
           </div>
         </div>
