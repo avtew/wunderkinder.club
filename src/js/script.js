@@ -118,35 +118,44 @@ const btnUp = document.querySelector('.up');
 burger.addEventListener('click', toggleMenu);
 menuItem.forEach((el) => el.addEventListener('click', closeMenu));
 menuLangActive.addEventListener('click', showDrop);
+
 ru.addEventListener('click', event => {
   isEn = false;
   switchLang("ru"); 
   menuLangActive.textContent = event.target.textContent;
 });
+
 en.addEventListener('click', event => { 
   isEn = true;
   switchLang("en");
   menuLangActive.textContent = event.target.textContent;
 });
+
 btnMore.forEach((el) => el.addEventListener('click', togglePopup));
+
 btnMore.forEach((el) => el.addEventListener('mouseover', event => {
   let id = event.target.id;
   btnId = Number(id);
 }));
+
 popupClose.addEventListener('click', togglePopup);
+
 btnJoin.forEach((el) => el.addEventListener('mouseover', () => {
   menuNav.style.zIndex = '0'
 }));
+
 btnJoin.forEach((el) => el.addEventListener('click', toggleModal));
+
 modalClose.addEventListener('click', toggleModal);
+
 window.addEventListener('wheel', () => {
-  const rect = header.getBoundingClientRect();
-  if(rect.y < -101) {
+  if (document.documentElement.scrollTop > 600) {
     btnUp.style.display = 'block';
   } else {
     btnUp.style.display = 'none';
   }
 });
+
 btnUp.addEventListener('click', () => {
   btnUp.style.display = 'none';
 });
