@@ -198,10 +198,10 @@
           <div class="col-lg-6 col-md-12 square square_form">
             <div class="modal__message">
               <h3 data-i18n="write">Напишите нам</h3>
-              <form class="modal__form">
+              <form class="modal__form" action="send.php" method="post">
                 <input name="name" type="text" placeholder="Name">
                 <input name="email" required type="email" placeholder="Email">
-                <textarea name="text" required placeholder="Your message..."></textarea>
+                <textarea name="message" required placeholder="Your message..."></textarea>
                 <button class="button button_submit" data-i18n="send">отправить</button>
               </form>
             </div>
