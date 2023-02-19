@@ -51,7 +51,7 @@
           <div class="modal__close"></div>
           <div class="modal__message">
             <h3 data-i18n="write">Напишите нам</h3>
-            <form class="modal__form">
+            <form class="modal__form" action="send.php" method="post">
               <input name="name" type="text" placeholder="Name">
               <input name="email" required type="email" placeholder="Email">
               <textarea name="text" required placeholder="Your message..."></textarea>
@@ -75,9 +75,6 @@
           </div>
           <div class="col-lg-6 col-sm-12 square square_image">
             <img class="info__img-about" src="img/about.png" alt="Шахматные уроки онлайн">
-            <!-- <div class="bubble speech">
-              Первое правило клуба - <br> расскажи всем о клубе.
-            </div> -->
           </div>
         </div>
       </div>
@@ -177,20 +174,19 @@
         <div class="row g-0">
           <div class="col-lg-6 col-md-12 square square_contacts">
             <h2 data-i18n="contacts">Контакты</h2>
-            <!-- <img src="img/contacts.png" alt="logo"> -->
             <div>
               <p data-i18n="contacts-text-1">Вы можете связаться с нами для получения всей необходимой информации.</p>
               <p data-i18n="contacts-text-2">Отправьте сообщение через форму обратной связи или ищите нас в ваших любимых социальных сетях.</p>
               <p data-i18n="contacts-text-3">Для всех новых участников мы предлагаем одно <strong>бесплатное</strong> пробное занятие.</p>
             </div>
             <div class="contacts__social">
-              <a href=""><div class="contacts__icon">
+              <a href="https://www.instagram.com/wunderkindy_school/"><div class="contacts__icon">
                 <span class="icon-instagram"></span>
               </div></a>
-              <a href=""><div class="contacts__icon">
+              <a href="https://www.facebook.com/profile.php?id=100011401568901"><div class="contacts__icon">
                 <span class="icon-facebook"></span>
               </div></a>
-              <a href=""><div class="contacts__icon">
+              <a href="mailto:avtew@yandex.ru"><div class="contacts__icon">
                 <span class="icon-mail"></span>
               </div></a>
             </div>
