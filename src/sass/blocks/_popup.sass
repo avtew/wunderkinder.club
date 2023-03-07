@@ -4,8 +4,9 @@
   left: 50%
   z-index: 2
   display: none
-  color: #000000
-  font: 1rem Montserrat-Regular, sans-serif
+  color: #333333
+  font: 1rem Montserrat-Medium, sans-serif
+  text-align: justify
   background-color: $background-color
   transform: translate(-50%, -50%)
   &__photo
@@ -41,16 +42,7 @@
       flex-grow: 2
       align-items: center
       margin: 0
-  &__list
-    display: flex
-    flex-direction: column
-    justify-content: center
-    gap: 10px
-    margin: 0
-  &__item
-    color: $accent-color
-    span
-      color: #000000
+      line-height: 125%
   &__close
     position: absolute
     top: -50px
@@ -59,8 +51,12 @@
     height: 50px
     background-color: $main-color
     cursor: pointer
+    transition: 0.2s
     &:hover
       background-color: $accent-color
+      transform: scale(0.95)
+    &:active
+      transform: scale(0.9)
     &:before, &:after
       content: ""
       position: absolute

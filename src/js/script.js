@@ -94,13 +94,11 @@ let btnId;
 let isOpen = false;
 let isEn = false;
 let isDrop = false;
-const header = document.querySelector('.header');
 const logo = document.querySelector('.logo');
 const burger = document.querySelector('.burger');
 const menuNav = document.querySelector('.menu__nav');
 const menuItem = document.querySelectorAll('.menu__item');
 const dropList = document.querySelector('.menu__droplist');
-const menuLang = document.querySelector('.menu__lang');
 const menuLangActive = document.querySelector('.menu__lang_active');
 const string = document.querySelectorAll('[data-i18n]');
 const ru = document.querySelector('.menu__lang_ru');
@@ -112,6 +110,8 @@ const btnJoin = document.querySelectorAll('.button_join');
 const modal = document.querySelector('.modal');
 const modalClose = document.querySelector('.modal__close');
 const btnUp = document.querySelector('.up');
+const imgAbout = document.getElementById('img-about');
+const imgProcess = document.getElementById('img-process');
 
 //Listeners
 
@@ -123,12 +123,16 @@ ru.addEventListener('click', event => {
   isEn = false;
   switchLang("ru"); 
   menuLangActive.textContent = event.target.textContent;
+  imgAbout.src = '../img/about.png';
+  imgProcess.src = '../img/coaches.png';
 });
 
 en.addEventListener('click', event => { 
   isEn = true;
   switchLang("en");
   menuLangActive.textContent = event.target.textContent;
+  imgAbout.src = '../img/about_en.png';
+  imgProcess.src = '../img/coaches_en.png';
 });
 
 btnMore.forEach((el) => el.addEventListener('click', togglePopup));
@@ -148,16 +152,12 @@ btnJoin.forEach((el) => el.addEventListener('click', toggleModal));
 
 modalClose.addEventListener('click', toggleModal);
 
-window.addEventListener('wheel', () => {
+window.addEventListener('scroll', () => {
   if (document.documentElement.scrollTop > 600) {
     btnUp.style.display = 'block';
   } else {
     btnUp.style.display = 'none';
   }
-});
-
-btnUp.addEventListener('click', () => {
-  btnUp.style.display = 'none';
 });
 
 document.addEventListener("click", function(event) {

@@ -1,25 +1,50 @@
 body
   position: relative
-  color: #000000
+  color: #333333
   background-color: $background-color
 
 a
   text-decoration: none
 
 h2
+  position: relative
   margin: 0
   font: 2rem Montserrat-SemiBold, sans-serif
+  color: $accent-color
+  &:before
+    position: absolute
+    top: 50%
+    right: 120%
+    content: ""
+    width: 60px
+    height: 2px
+    background-color: $accent-color
+  &:after
+    position: absolute
+    top: 50%
+    left: 120%
+    content: ""
+    width: 60px
+    height: 2px
+    background-color: $accent-color
 
 h3
   margin: 0
-  color: #000000
   font: 1.5rem Montserrat-SemiBold, sans-serif
 
 .info
   background-color: #ffffff
     
 .coaches
-  position: relative
+  padding-top: 80px
+  &__wrapper
+    position: relative
+    display: flex
+    flex-direction: column
+    h2
+      align-self: center
+      &:before, &:after
+        background-color: $accent-color
 
 .up
   position: fixed
@@ -34,6 +59,8 @@ h3
   &:hover
     background-color: $accent-color
     transform: scale(0.95)
+  &:active
+    transform: scale(0.9)
   &:before
     content: ""
     position: absolute
