@@ -1,35 +1,96 @@
 body
   position: relative
-  color: #ffffff
-  font-family: Nunito-Regular, sans-serif
-  background-color: #F7F8F9
+  color: #000000
+  background-color: $background-color
 
 a
   text-decoration: none
 
-h1
-  margin: 0
-  font: 3rem Shnobel, serif
-  text-align: center
-  text-transform: uppercase
-
 h2
   margin: 0
-  font: 2.5rem Shnobel, serif
-  text-transform: uppercase
+  font: 2rem Montserrat-SemiBold, sans-serif
 
 h3
   margin: 0
-  font: 2rem Shnobel, serif
-  text-transform: uppercase
+  color: #000000
+  font: 1.5rem Montserrat-SemiBold, sans-serif
 
-.about
+.info
   background-color: #ffffff
-  
-.trainers
-  background-color: #ffffff
-
-.persons
+    
+.coaches
   position: relative
-  &__photo
-    border-radius: 100%
+
+.up
+  position: fixed
+  right: 40px
+  bottom: 40px
+  display: none
+  width: 50px
+  height: 50px
+  background-color: $main-color
+  cursor: pointer
+  transition: 0.2s
+  &:hover
+    background-color: $accent-color
+    transform: scale(0.95)
+  &:before
+    content: ""
+    position: absolute
+    top: 22px
+    left: 21px
+    width: 24px
+    height: 4px
+    background: $background-color
+  &:after
+    content: ""
+    position: absolute
+    top: 22px
+    left: 6px
+    width: 24px
+    height: 4px
+    background: $background-color
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(-45deg)
+
+// .bubble
+//   display: none
+//   position: absolute
+//   top: 20px
+//   left: 450px
+//   width: 300px
+//   margin: 40px auto
+//   padding: 20px
+//   color: #000000
+//   font: 1rem Montserrat-Regular
+//   text-align: center
+//   line-height: 1.4em
+//   border: 3px solid $main-color
+//   border-radius: 30px
+//   &:before, 
+//   &:after
+//     content: ""
+//     position: absolute
+//     width: 0
+//     height: 0
+  
+// .speech
+//   border-radius: 200px
+//   padding: 30px
+//   &:before,
+//   &:after
+//     left: 10px
+//     bottom: -30px
+//     width: 40px
+//     height: 40px
+//     background-color: #fff
+//     border: 3px solid $main-color
+//     border-radius: 28px
+//   &:after
+//     width: 20px
+//     height: 20px
+//     left: 5px
+//     bottom: -40px
+//     border-radius: 18px

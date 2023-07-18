@@ -1,0 +1,77 @@
+.popup
+  position: fixed
+  top: 50%
+  left: 50%
+  z-index: 2
+  display: none
+  color: #000000
+  font: 1rem Montserrat-Regular, sans-serif
+  background-color: $background-color
+  transform: translate(-50%, -50%)
+  &__photo
+    width: 450px
+    height: 450px
+    background-image: ""
+    background-size: cover
+    background-repeat: no-repeat
+  &__info
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 450px
+    padding: 40px
+    div
+      h3
+        align-self: center
+      span
+        position: relative
+        display: block
+        margin: 10px 0 0 20px
+        color: $main-color
+        &:before
+          position: absolute
+          left: -20px
+          content: ''
+          display: block 
+          width: 15px
+          height: 15px
+          background: url("../icons/pawn.svg")
+    p
+      display: flex
+      flex-grow: 2
+      align-items: center
+      margin: 0
+  &__list
+    display: flex
+    flex-direction: column
+    justify-content: center
+    gap: 10px
+    margin: 0
+  &__item
+    color: $accent-color
+    span
+      color: #000000
+  &__close
+    position: absolute
+    top: -50px
+    left: 900px
+    width: 50px
+    height: 50px
+    background-color: $main-color
+    cursor: pointer
+    &:hover
+      background-color: $accent-color
+    &:before, &:after
+      content: ""
+      position: absolute
+      top: 22px
+      left: 13px
+      width: 24px
+      height: 4px
+      background: $background-color
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(-45deg)
+  &.open
+    display: flex
