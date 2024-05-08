@@ -1,13 +1,4 @@
-@media (min-width: 1921px)
-  .menu
-    &__link, &__drop
-      color: #000000
-  
 @media (max-width: 1399px)
-  .menu
-    &__link, &__drop
-      color: #000000
-
   .header
       &__text
         h1
@@ -24,13 +15,23 @@
           font-size: 2.5rem
         span
           width: 50%
-  h2
-    font-size: 1.5rem
+
+  .menu
+    &__list
+      &_footer
+        gap: 20px
 
   .square
     padding: 40px
     &_text
       gap: 20px
+    &_image
+      .quote-about, .quote-process
+        top: 40px
+        font-size: 1rem
+
+  .coaches
+    padding-top: 40px
 
   .popup
     &__close
@@ -49,16 +50,22 @@
   .square
     padding: 80px
     aspect-ratio: auto
-    &_image
-      display: none
     &_text, &_contacts
       gap: 40px
       font-size: 1.25rem
+    &_form
+      h3
+        align-self: center
+      button
+        align-self: center
 
-  .process
+  .offer
       &__wrapper
         gap: 40px
         padding: 80px 0
+
+  .coaches
+    padding-top: 80px
 
   .footer
     &__info
@@ -71,6 +78,7 @@
       align-items: center
 
   .menu__list
+    gap: 30px
     &_footer
       flex-direction: column
       gap: 20px
@@ -83,7 +91,7 @@
       top: -50px
       left: 450px
 
-@media (max-width: 767px)
+@media (max-width: 768px)
   .header
     padding: 20px 0
     background: url("../img/header_sm.jpg") bottom / cover no-repeat
@@ -161,7 +169,7 @@
           width: 250px
           height: 250px
 
-  .process
+  .offer
     &__wrapper
       gap: 40px
       padding: 40px 0
@@ -171,6 +179,9 @@
     &__sub
       width: 220px
       font: 1rem Montserrat-Regular, sans-serif
+
+  .coaches
+    padding-top: 40px
 
   .popup
     &__close
@@ -188,7 +199,7 @@
         font-size: 1rem
 
   h2
-    font-size: 1.25rem
+    font-size: 1.75rem
 
   h3
     font-size: 1.25rem

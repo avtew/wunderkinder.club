@@ -1,25 +1,50 @@
 body
   position: relative
-  color: #000000
+  color: #333333
   background-color: $background-color
 
 a
   text-decoration: none
 
 h2
+  position: relative
   margin: 0
   font: 2rem Montserrat-SemiBold, sans-serif
+  color: $accent-color
+  &:before
+    position: absolute
+    top: 50%
+    right: 120%
+    content: ""
+    width: 60px
+    height: 2px
+    background-color: $accent-color
+  &:after
+    position: absolute
+    top: 50%
+    left: 120%
+    content: ""
+    width: 60px
+    height: 2px
+    background-color: $accent-color
 
 h3
   margin: 0
-  color: #000000
   font: 1.5rem Montserrat-SemiBold, sans-serif
 
 .info
   background-color: #ffffff
     
 .coaches
-  position: relative
+  padding-top: 80px
+  &__wrapper
+    position: relative
+    display: flex
+    flex-direction: column
+    h2
+      align-self: center
+      &:before, &:after
+        background-color: $accent-color
 
 .up
   position: fixed
@@ -34,6 +59,8 @@ h3
   &:hover
     background-color: $accent-color
     transform: scale(0.95)
+  &:active
+    transform: scale(0.9)
   &:before
     content: ""
     position: absolute
@@ -54,43 +81,3 @@ h3
     transform: rotate(45deg)
   &:after
     transform: rotate(-45deg)
-
-// .bubble
-//   display: none
-//   position: absolute
-//   top: 20px
-//   left: 450px
-//   width: 300px
-//   margin: 40px auto
-//   padding: 20px
-//   color: #000000
-//   font: 1rem Montserrat-Regular
-//   text-align: center
-//   line-height: 1.4em
-//   border: 3px solid $main-color
-//   border-radius: 30px
-//   &:before, 
-//   &:after
-//     content: ""
-//     position: absolute
-//     width: 0
-//     height: 0
-  
-// .speech
-//   border-radius: 200px
-//   padding: 30px
-//   &:before,
-//   &:after
-//     left: 10px
-//     bottom: -30px
-//     width: 40px
-//     height: 40px
-//     background-color: #fff
-//     border: 3px solid $main-color
-//     border-radius: 28px
-//   &:after
-//     width: 20px
-//     height: 20px
-//     left: 5px
-//     bottom: -40px
-//     border-radius: 18px
