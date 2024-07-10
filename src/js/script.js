@@ -123,16 +123,16 @@ ru.addEventListener('click', event => {
   isEn = false;
   switchLang("ru"); 
   menuLangActive.textContent = event.target.textContent;
-  imgAbout.src = '../img/about.png';
-  imgProcess.src = '../img/coaches.png';
+  imgAbout.src = './img/about.png';
+  imgProcess.src = './img/coaches.png';
 });
 
 en.addEventListener('click', event => { 
   isEn = true;
   switchLang("en");
   menuLangActive.textContent = event.target.textContent;
-  imgAbout.src = '../img/about_en.png';
-  imgProcess.src = '../img/coaches_en.png';
+  imgAbout.src = './img/about_en.png';
+  imgProcess.src = './img/coaches_en.png';
 });
 
 btnMore.forEach((el) => el.addEventListener('click', togglePopup));
