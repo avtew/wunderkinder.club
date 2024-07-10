@@ -9,7 +9,7 @@ export const coaches = [
     "photo": 'url("img/liudmyla.jpg")',
     "name": 'Liudmyla Goroshkova',
     "rank": 'Candidate for Master of Sport',
-    "about": 'He has been teaching chess for over 10 years. In addition to higher pedagogical education, he has higher legal education. She worked in the police, so strict but fair. Multiple participant in various championships. The winner of nominations "The most beautiful participant of the tournament" and "The most beautiful game". He dislikes rapid chess and believes that the real beauty of this game is revealed only in classical carefully thought-out six-hour games. She loves women\'s handbags and her cat Sylvester.',
+    "about": 'He has been teaching chess for over 10 years. In addition to higher pedagogical education, he has higher legal education. She worked in the police, so strict but fair. Multiple participant in various championships. The winner of nominations "The most beautiful participant of the tournament" and "The most beautiful game". She dislikes rapid chess and believes that the real beauty of this game is revealed only in classical carefully thought-out six-hour games. She loves women\'s handbags and her cat Sylvester.',
   },
   {
     "photo": 'url("img/maksym.jpg")',
